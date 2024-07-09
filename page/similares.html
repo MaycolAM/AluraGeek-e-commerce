@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="/styles/similares.css">
+    <script defer src="/js/main.js" type="module"></script>
+    <script defer src="/js/otroindex.js"></script>
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__div">
+            <img class="header__img" src="/assets/logo.png" alt="logo">
+            <div class="header__buscador" id="buscador">
+                <input class="header__busca" type="text" placeholder="¿Que deseas buscar?" data-busqueda>
+                <div class="header__lupa--buscador" data-boton-busqueda>
+                    <img class="header__lupa" src="/assets/lupa.png" alt="lupa">
+                </div>
+            </div>
+            <div class="header__boton" onclick="mostrarOcultar()">
+                <img class="header__lupa--dos" src="/assets/lupa.png" alt="lupa" data-boton-busqueda>
+            </div>
+        </div>
+    </header>
+    <section class="section__todo">
+        <div class="section">
+            <div class="section__productos">
+                <h2 class="section__name">Todos los productos</h2>
+                <a class="section__boton" href="/page/agregar-producto.html" >Agregar producto</a>
+            </div>
+            <ul class="producto__todo" id="borrar" data-lista>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__arriba">
+            <div class="footer__izquierda">
+                <img class="footer__logo" src="/assets/logo.png" alt="Logo">
+            </div>
+            <ul class="footer__centro">
+                <li><a class="footer__a" href="#">Quienes somos</a></li>
+                <li><a class="footer__a" href="#">Politica de privacidad</a></li>
+                <li><a class="footer__a" href="#">Programa de fidelidad</a></li>
+                <li><a class="footer__a" href="#">Nuestras Tiendas</a></li>
+                <li><a class="footer__a" href="#">Quiero ser franquiciado</a></li>
+                <li><a class="footer__a" href="#">Anuncie aqui</a></li>
+            </ul>
+            <div class="footer__derecha">
+                <h3 class="footer__title">Hable con nosotros</h3>
+                <form class="footer__form" action="https://formsubmit.co/maycolapazamolina@gmail.com" method="POST">
+                    <input class="footer__input" type="text" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off" minlength="3" maxlength="40" data-required required>
+                    <textarea class="footer__textarea" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" autocomplete="off" maxlength="120" data-required required></textarea>
+                    <span class="mensaje__error"></span>
+                    <button class="footer__envio" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__abajo">
+            <p>Desarrollado por Maycol Apaza Molina</p>
+            <p>2024</p>
+        </div>
+    </footer>
+    <script type="module" src="/js/mostrarProductos.js"></script>
+    <script type="module" src="/js/filtrarProductos.js"></script>
+</body>
+</html>
+
+<!--* npx json-server --watch db.json --port 3002 -->

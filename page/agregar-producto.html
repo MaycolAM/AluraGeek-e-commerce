@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="/styles/agregar-producto.css">
+    <script defer src="/js/agregar.js" type="module"></script>
+    <script defer src="/js/main.js" type="module"></script>
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__div">
+            <a class="header__img" href="/page/similares.html"><img src="/assets/logo.png" alt="logo"></a>
+            <a class="header__login" href="/page/similares.html">Menú Administrador</a>
+        </div>
+    </header>
+    <section class="section__form">
+        <form class="form" data-formulario>
+            <h2 class="form__titulo">Agregar nuevo producto</h2>
+            <div class="form__campo">
+                <label class="form__label" for="imagen">Link de imagen:</label>
+                <input class="form__input" name="imagen" type="url" minlength="20" maxlength="100" placeholder="URL de imagen" id="imagen" data-agregar required data-imagen/>
+                <span class="mensaje__error--login mensaje__error--agregar"></span>
+            </div>
+
+            <div class="form__campo form__campo--dos">
+                <label class="form__label" for="categoria">Categoria:</label>
+                <input class="form__input form__input--categoria" name="categoria" type="text" minlength="3" maxlength="30" placeholder="Categoria" id="categoria" data-agregar required data-categoria/>
+                <span class="mensaje__error--login mensaje__error--agregar"></span>
+            </div>
+
+            <div class="form__campo form__campo--tres">
+                <label class="form__label" for="nombre">Producto:</label>
+                <input class="form__input" name="nombre" type="text" minlength="3" maxlength="20" placeholder="Nombre del producto" id="producto" data-agregar required data-nombre/>
+                <span class="mensaje__error--login mensaje__error--agregar"></span>
+            </div>
+            <div class="form__campo form__campo--cuatro">
+                <label class="form__label" for="precio">Precio:</label>
+                <input class="form__input" name="precio" type="number" minlength="2" maxlength="2" placeholder="Precio del producto" id="precio" data-agregar required data-precio/>
+                <span class="mensaje__error--login mensaje__error--agregar"></span>
+            </div>
+            <div class="form__campo form__campo--cinco">
+                <label class="form__label" for="descripcion">Descripcion:</label>
+                <textarea class="form__input form__descripcion" name="descripcion" maxlength="150" placeholder="Descripcion del producto" id="descripcion" data-agregar required data-descripcion></textarea>
+                <span class="mensaje__error--login mensaje__error--agregar"></span>
+            </div>
+
+            <input class="form__boton" type="submit"/>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__arriba">
+            <div class="footer__izquierda">
+                <img class="footer__logo" src="/assets/logo.png" alt="Logo">
+            </div>
+            <ul class="footer__centro">
+                <li><a class="footer__a" href="#">Quienes somos</a></li>
+                <li><a class="footer__a" href="#">Politica de privacidad</a></li>
+                <li><a class="footer__a" href="#">Programa de fidelidad</a></li>
+                <li><a class="footer__a" href="#">Nuestras Tiendas</a></li>
+                <li><a class="footer__a" href="#">Quiero ser franquiciado</a></li>
+                <li><a class="footer__a" href="#">Anuncie aqui</a></li>
+            </ul>
+            <div class="footer__derecha">
+                <h3 class="footer__title">Hable con nosotros</h3>
+                <form class="footer__form" action="https://formsubmit.co/maycolapazamolina@gmail.com" method="POST">
+                    <input class="footer__input" type="text" id="nombre" name="nombre__form" placeholder="Nombre" autocomplete="off" minlength="3" maxlength="40" data-required required>
+                    <textarea class="footer__textarea" id="mensaje" name="mensaje__form" placeholder="Escribe tu mensaje" autocomplete="off" maxlength="120" data-required required></textarea>
+                    <span class="mensaje__error"></span>
+                    <button class="footer__envio" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__abajo">
+            <p>Desarrollado por Maycol Apaza Molina</p>
+            <p>2024</p>
+        </div>
+    </footer>
+    <script src="/js/crearProducto.js" type="module"></script>
+</body>
+</html>

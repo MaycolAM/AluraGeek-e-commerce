@@ -1,0 +1,43 @@
+@import url("./estilos.css");
+
+.section__boton{
+    background-color: #2a7ae4;
+    color: white;
+    width: 190px;
+    height: 60px;
+    justify-content: center;
+}
+
+.quitar__producto{
+    display: none;
+}
+.productos__productos{
+    position: relative;
+}
+.productos:nth-child(1n){
+    display: inherit;
+}
+.productos__basurero{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    cursor: pointer;
+}
+.productos__lapiz{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.productos__a{
+    color: #6d6d6d;
+}
+@media screen and (max-width:480px){
+.section__productos{
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+}

@@ -1,0 +1,52 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "categoria": "Star Wars",
+      "imagen": "https://i.ibb.co/H7DJZ0k/producto-uno.png",
+      "nombre": "Tasa",
+      "precio": "60.00",
+      "descripcion": "una tasa de star wars"
+    },
+    {
+      "id": 2,
+      "categoria": "Star Wars",
+      "imagen": "https://i.ibb.co/LNqxSf5/producto-dos.png",
+      "nombre": "Tasa",
+      "precio": "60.00",
+      "descripcion": "una tasa de star wars"
+    },
+    {
+      "id": 3,
+      "categoria": "Star Wars",
+      "imagen": "https://i.ibb.co/rbNwMC9/unsplash-Ke-GTo-DVN0l4.png",
+      "nombre": "muñeco yoda",
+      "precio": "10.00",
+      "descripcion": "muñeco de yoda"
+    },
+    {
+      "id": 4,
+      "categoria": "Star Wars",
+      "imagen": "https://i.ibb.co/1Xz79yX/unsplash-4-OHk-K555s1-A.png",
+      "nombre": "juguete",
+      "precio": "20.00",
+      "descripcion": "juguete de stormtruper"
+    },
+    {
+      "id": 5,
+      "categoria": "Star Wars",
+      "imagen": "https://i.ibb.co/wBTqnvx/unsplash-R8-L1l9-RN198.png",
+      "nombre": "juguete yoda",
+      "precio": "10.00",
+      "descripcion": "juguete pequeño de yoda"
+    },
+    {
+      "id": 6,
+      "categoria": "Star Wars",
+      "imagen": "https://i.ibb.co/d6Wcr7M/unsplash-1-VV1-MRafd7-A.png",
+      "nombre": "dark vader",
+      "precio": "60.00",
+      "descripcion": "juguete de dark vader"
+    }
+  ]
+}
